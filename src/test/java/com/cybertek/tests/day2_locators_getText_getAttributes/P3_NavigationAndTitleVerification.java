@@ -19,12 +19,35 @@ public class P3_NavigationAndTitleVerification {
         driver.get("https://www.google.com");
 
         // 3-Click to Gmail from top right
+        // we are locating the Gmail web element using findElement method and linkText LOCATOR
         driver.findElement(By.linkText("Gmail")).click();
 
         // 4-Verify title contains:
         // Expected: Gmail
-        // 5-Go back to Google by using the .back()
-        // ;6-Verify title equals:Expected: Google
-        //
+        String expectedInTitle = "Gmail";
+        String actualTitle = driver.getTitle();
+
+        if(actualTitle.contains(expectedInTitle)){
+            System.out.println("Gmail Title verification PASSED!");
+        }else{
+            System.out.println("Gmail Title verification FAILED!!!");
+        }
+        // 5-Go back to Google by using the .back();
+        driver.navigate().back();
+        // 6-Verify title equals:
+        // Expected: Google
+
+
+        String expectedGoogleTitle = "Google";
+        String actualGoogleTitle = driver.getTitle();
+        if(actualGoogleTitle.equals(expectedGoogleTitle)){
+            System.out.println("Google title verification PASSED!");
+        }else{
+            System.out.println("Google title verifcation FAILED!!!");
+        }
+
+
+
+
     }
 }
