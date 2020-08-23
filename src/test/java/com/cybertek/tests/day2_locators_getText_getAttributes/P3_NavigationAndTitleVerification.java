@@ -25,5 +25,6 @@ public class P3_NavigationAndTitleVerification {
         // Expected: Gmail
         // 5-Go back to Google by using the .back()
         // ;6-Verify title equals:Expected: Google
+        //
     }
 }
