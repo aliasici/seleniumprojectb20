@@ -7,7 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class F2_LoginTitleVerification {
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
 
@@ -30,7 +31,14 @@ public class F2_LoginTitleVerification {
         // 5.Verify title changed to: Expected: “Log into Facebook | Facebook
 
         String expectedTitle = "Log into Facebook | Facebook";
+
+
+
         String actualTitle = driver.getTitle();
+        Thread.sleep(5000);
+
+        System.out.println("expectedTitle+ "+ expectedTitle);
+        System.out.println("actualTitle= "+actualTitle);
 
         if (actualTitle.equals(expectedTitle)) {
             System.out.println("Title verification passed!");
