@@ -18,9 +18,11 @@ public class Vytrack {
         WebDriver driver = new ChromeDriver();
 
         // 2-Go to: Vytrack web site
+
         driver.get("https://qa2.vytrack.com/user/login");
 
      //   driver.findElement(By.name("u")).sendKeys("user153" + Keys.ENTER);
+
         driver.findElement(By.id("prependedInput")).sendKeys("user153");
         driver.findElement(By.id("prependedInput2")).sendKeys("UserUser123" + Keys.ENTER);
 
