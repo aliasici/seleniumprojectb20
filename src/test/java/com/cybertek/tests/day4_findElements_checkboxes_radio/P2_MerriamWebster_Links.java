@@ -41,6 +41,7 @@ public class P2_MerriamWebster_Links {
         System.out.println("The number of links that HAS text= " + linksWithText);
 
         //6. Print out how many total link
+        System.out.println("The number of TOTAL links on this page = " + listOfLinks.size());
 
 
     }
