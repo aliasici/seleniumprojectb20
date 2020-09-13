@@ -18,7 +18,15 @@ public class P05_SleniumEasy_Task {
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
         WebElement successCheckbox = driver.findElement(By.xpath("//input[@id='isAgeSelected']"));
+
+        WebElement successMessage = driver.findElement(By.xpath("//div[@id='txtAge']"));
         //3. Verify “Success – Check box is checked” message is NOT displayed.
+
+        if(!successMessage.isDisplayed()){
+            System.out.println("Success message is not displayed. Verification PASSED!");
+        }else {
+            System.out.println("Success message is displayed. Verification FAILED!!!");
+        }
         //4. Click to checkbox under “Single Checkbox Demo” section
         //5. Verify “Success – Check box is checked” message is displayed.
 
