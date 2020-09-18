@@ -58,6 +58,7 @@ public class TestNG_Practices {
     public void tearDownMethod() throws InterruptedException{
         Thread.sleep(1000);
         driver.close();
+        //hello ne yapalimm
     }
 
 }
