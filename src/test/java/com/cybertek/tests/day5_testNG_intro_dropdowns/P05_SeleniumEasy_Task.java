@@ -18,13 +18,14 @@ public class P05_SeleniumEasy_Task {
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
         //Locate success message and checkbox under 'single checkbox demo'
-        WebElement successCheckbox = driver.findElement(By.xpath("//input[@id='isAgeSelected']"));
+        WebElement successCheckbox = driver.findElement(By.xpath("//input[@type='checkbox']"));
 
         //locate the success message
         //create a locator to success message and share it in class-chat
         //div[@style='display: block;']
         //div[.='Success - Check box is checked']
         WebElement successMessage = driver.findElement(By.xpath("//div[@id='txtAge']"));
+        // Success - Check box is checked
 
         //3. Verify “Success – Check box is checked” message is NOT displayed.
         if (!successCheckbox.isSelected() && !successMessage.isDisplayed()){

@@ -28,7 +28,7 @@ public class P1_CybertekForgotPassword {
         //b. “Forgot password” header
         WebElement header = driver.findElement(By.xpath("//h2[.='Forgot Password']"));
 
-        //c. “E-mail” text
+        //c. “E-mail” text // //label[@for='email']
         WebElement emailLabel = driver.findElement(By.xpath("//label[@for='email']"));
 
         //d. E-mail input box

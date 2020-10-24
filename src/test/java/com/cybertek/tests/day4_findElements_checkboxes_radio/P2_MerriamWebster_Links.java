@@ -25,7 +25,7 @@ public class P2_MerriamWebster_Links {
 
         for (WebElement eachLink : listOfLinks){
             String textOfEachLink = eachLink.getText();
-            System.out.println(textOfEachLink);
+           // System.out.println(textOfEachLink);
 
             if(textOfEachLink.isEmpty()){
                 linksWithoutText++;

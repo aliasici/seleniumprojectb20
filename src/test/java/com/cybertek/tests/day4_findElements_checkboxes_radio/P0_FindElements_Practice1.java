@@ -8,6 +8,13 @@ import org.openqa.selenium.WebElement;
 import java.util.List;
 
 public class P0_FindElements_Practice1 {
+    /*
+    TC #0: FINDELEMENTS
+1. Open Chrome browser
+2. Go to http://practice.cybertekschool.com/forgot_password
+3. Print out the texts of all links
+4. Print out how many total link
+     */
     public static void main(String[] args) {
         //TC #0: FINDELEMENTS
         //1. Open Chrome browser
@@ -29,6 +36,7 @@ public class P0_FindElements_Practice1 {
         int numberOfLinks = listOfLinks.size();
 
         System.out.println("numberOfLinks " + numberOfLinks);
+
 
 
     }

@@ -46,7 +46,8 @@ public class TestNG_Introduction {
 
         System.out.println("JUst checking if this line will run????? ");
 
-        Assert.assertEquals(str1, str2, "Failure message just in case str1 is not equals to str2");
+        Assert.assertEquals(str1, str2, "Failure message just in case str1 is not equals to str2"); //STATIC METHOD...
+       //  What is .m2
 
 
     }
