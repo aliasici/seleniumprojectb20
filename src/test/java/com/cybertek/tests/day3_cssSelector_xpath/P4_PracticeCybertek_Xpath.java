@@ -13,6 +13,7 @@ public class P4_PracticeCybertek_Xpath {
         //locate button 2 and click on it
         //only using xpath
 
+        //[@attribute='value']
         WebElement button2 = driver.findElement(By.xpath("//button[@name='button2'] "));
         button2.click();
 
