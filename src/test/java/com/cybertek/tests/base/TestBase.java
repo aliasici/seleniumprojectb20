@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public abstract class TestBase {
 
-    protected WebDriver driver; // protected most secure one access m.
+    protected WebDriver driver; // protected secure one and subclass can call this access m.
 
     @BeforeMethod
     public void setupMethod(){
